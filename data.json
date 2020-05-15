@@ -1,0 +1,100 @@
+[
+    {
+        "about": ""
+    },
+    {
+        "projects": {
+                "_id": "",
+                "projectinfo": {
+                    "id": 1,
+                    "title": "Conscious nutrition",
+                    "subtitle": "Workshop for schoolchildren in 5th to 6th grade",
+                    "year": "2020",
+                    "month": "02",
+                    "organisation": "University for Design Schwäbisch Gmünd",
+                    "category": "University Project",
+                    "field": "Interaction Design",
+                    "module": "Bachelor Thesis",
+                    "description": "description",
+                    "partners":"",
+                    "colortag": "4cc3e1",
+                    "thumbimg": "URL",
+                    "conceptrate": 10
+                },
+                "projectimg": {
+                    "img001": "URL",
+                    "img002": "URL"
+                },
+                "tech": {
+                    "CAD-Software": {
+                        "3D-Studio MAX": false,
+                        "Autodesk AutoCAD": false
+                    },
+                    "Graphic-Softwares": {
+                        "Adobe Photoshop": false,
+                        "Adobe Illustrator": false,
+                        "Adobe InDesign": false,
+                        "Adobe After Effects": false,
+                        "Adobe Premier": false
+                    },
+                    "Programming Technologies": {
+                        "HTML, CSS, JavaScript": false,
+                        "AngularJs": false,
+                        "C++": false,
+                        "C#": false
+                    },
+                    "Prototyping Tools": {
+                        "Axure RP": false,
+                        "Invention": false,
+                        "Flinto": false,
+                        "Sketch": false
+                    }
+                }
+            }
+        },
+        {
+            "_id": "",
+            "projectinfo": {
+                "id": 1,
+                "title": "Project C-Design",
+                "subtitle": "Project C-Design",
+                "year": "2004",
+                "month": "01",
+                "category": "University Project",
+                "field": "Industrial Design",
+                "description": "description",
+                "colortag": "4cc3e1",
+                "thumbimg": "URL",
+                "conceptrate": 10
+            },
+            "projectimg": {
+                "img001": "URL",
+                "img002": "URL"
+            },
+            "tech": {
+                "CAD-Software": {
+                    "3D-Studio MAX": false,
+                    "Autodesk AutoCAD": false
+                },
+                "Graphic-Softwares": {
+                    "Adobe Photoshop": false,
+                    "Adobe Illustrator": false,
+                    "Adobe InDesign": false,
+                    "Adobe After Effects": false,
+                    "Adobe Premier": false
+                },
+                "Programming Technologies": {
+                    "HTML, CSS, JavaScript": false,
+                    "AngularJs": false,
+                    "C++": false,
+                    "C#": false
+                },
+                "Prototyping Tools": {
+                    "Axure RP": false,
+                    "Invention": false,
+                    "Flinto": false,
+                    "Sketch": false
+                }
+            }
+        }
+    ]
