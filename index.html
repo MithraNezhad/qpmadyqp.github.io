@@ -13,27 +13,93 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
 
 </head>
+<style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+#app > b {
+    text-decoration: underline;
+    color: red;
+}
+
+.details-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+</style>
+
 
 <body>
     <div id="app">
-        <b> {{ message | toUpperCase }}</b>
+        <b> {{ message }}</b>
+
         <project-details v-bind:model="itemDetails" v-if="itemDetails"></project-details>
-        <img width="200px" src="http://drive.google.com/uc?export=view&id=1Uydw1mGHwo134dmoT0fdj5B8HQGCZRgf">
-        <video width="400" controls>
-            <source src="http://drive.google.com/uc?export=view&id=1PgWkyemCGorGcBXF90HVh2fpsCQJM1IY" type="video/mp4">
-            Your browser does not support HTML video.
-          </video>
         <div class="projects">
             <div class="project" v-on:click="itemDetails = project" v-for="project in projects">
                 {{_.get(project,'projectinfo.title')}}
             </div>
         </div>
     </div>
+
+    
+<script>
+    Vue.component('project-details', {
+    // camelCase in JavaScript
+    props: ["model"],
+    template: `
+    <div class="details-wrapper">
+    <h3>{{ model }}</h3>
+    </div>
+    `.toString()
+})
+
+Vue.component('button-counter', {
+    props: ["name"],
+    data: function () {
+        return {
+            count: 0
+        }
+    },
+    template: '<button v-on:click="count++">You clicked me {{ count }} times. {{name}}</button>'
+})
+
+var app = new Vue({
+    el: '#app',
+    filters: {
+        toUpperCase: function (input) {
+            return input.toUpperCase();
+        }
+    },
+    methods: function () {
+
+    },
+    computed: function () {
+
+    },
+    mounted: async function () {
+        // document ready
+        this.projects = (await axios.get('https://raw.githubusercontent.com/qpmadyqp/qpmadyqp-web/master/src/data.json')).data;
+    },
+    data: function () {
+        return {
+            itemDetails: null,
+            message: "Hi",
+            projects: []
+        }
+
+    }
+})
+</script>
+
     <script src="main.js"></script>
 
 
 </body>
 
 </html>
-https://drive.google.com/open?id=
 
