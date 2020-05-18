@@ -10,22 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script> -->
 </head>
 
 
 <body>
-    <div id="app">
-        <b> {{ message }}</b>
-
-        <project-details v-bind:model="itemDetails" v-if="itemDetails"></project-details>
-        <div class="projects">
-            <div class="project" v-on:click="itemDetails = project" v-for="project in projects">
-                {{_.get(project,'projectinfo.title')}} project
-            </div>
-        </div>
-    </div>
-    <button v-btn="button-counter">project</button>
+    <cards id="app">
+    </cards>
 
     <script src="./components/index.js"></script>
 </body>
