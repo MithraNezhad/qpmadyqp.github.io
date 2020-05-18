@@ -22,20 +22,27 @@
 
 
     <div id="app">
+
         <header>
             <h1>{{sitename}}</h1>
         </header>
-        <aside>
-            <ul class="side-bar-items">
-                <sidebar class="aside" v-for="item in sidebar" v-bind:side="item"></sidebar>
-            </ul>
-        </aside>
-        <section class="main">
-            <categories class="categories" v-for="cats in categories" v-bind:categorie="cats">
 
-            </categories>
-            <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id">
-            </cards>
+        <app-view>
+            <app-sidebar>
+                <ul class="side-bar-items">
+                    <sidebar class="aside" v-for="item in sidebar" v-bind:side="item"></sidebar>
+                </ul>
+            </app-sidebar>
+            <app-content>
+                <categories class="categories" v-for="cats in categories" v-bind:categorie="cats">
+
+                </categories>
+                <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id">
+                </cards>
+            </app-content>
+        </app-view>
+        <section class="main">
+
         </section>
     </div>
 
@@ -43,4 +50,3 @@
 </body>
 
 </html>
-

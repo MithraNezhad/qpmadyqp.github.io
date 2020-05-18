@@ -1,5 +1,9 @@
 @main-width: 65%;
 @card-size : 180px;
+@title: 1.2em;
+@subtitle: 1em;
+@content: 0.8em;
+
 
 body {
     font-family: 'Fira Sans', sans-serif;
@@ -13,7 +17,7 @@ header {
     padding-top: 20px;
 
     h1 {
-        font-size      : 1.2em;
+        font-size      : @title;
         font-weight    : 300;
         margin         : 0;
         padding        : 0;
@@ -27,7 +31,9 @@ div#app {
     height  : calc(100vh-200px);
 }
 
-aside {
+app-sidebar {
+
+    font-size: @subtitle;
     font-weight: 300;
     overflow   : hidden;
     position   : relative;
@@ -50,10 +56,10 @@ aside {
 
 }
 
-section.main {
+app-content {
     overflow  : hidden;
     overflow-y: auto;
-    float: right;
+    float     : right;
     width     : @main-width;
     height    : calc(100vh - 75px);
 }
@@ -80,7 +86,7 @@ div.cards {
 
     p {
         font-weight: 300;
-        font-size  : 12pt;
+        font-size  : @subtitle;
         margin     : 0;
         margin-left: 10px;
         margin-top : 5px;
