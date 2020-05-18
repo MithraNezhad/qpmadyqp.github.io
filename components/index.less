@@ -1,6 +1,8 @@
+@main-width: 65%;
+@card-size : 180px;
+
 body {
     font-family: 'Fira Sans', sans-serif;
-    overflow   : hidden;
 }
 
 header {
@@ -9,6 +11,7 @@ header {
     position   : relative;
     margin     : auto;
     padding-top: 20px;
+
     h1 {
         font-size      : 1.2em;
         font-weight    : 300;
@@ -19,64 +22,55 @@ header {
     }
 }
 
-section.side-bar {
+div#app {
+    overflow: hidden;
+    height  : calc(100vh-200px);
+}
+
+aside {
     font-weight: 300;
     overflow   : hidden;
     position   : relative;
     display    : block;
     float      : left;
-    overflow   : hidden;
-    width      : 400px;
-    height     : 100vh;
+    min-width  : 260px;
+    max-width  : 500px;
+    height     : calc(100vh - 75px);
+
     ul {
         margin         : 0;
         padding        : 0;
         padding-left   : 20px;
         list-style-type: none;
     }
+
     li {
         height: 25px;
     }
 
 }
 
-#app {
-    b {
-        text-decoration: underline;
-        color          : red;
-    }
-}
-
-.content {
+section.main {
     overflow  : hidden;
-    overflow-y: scroll;
-    width     : 790px;
+    overflow-y: auto;
+    float: right;
+    width     : @main-width;
+    height    : calc(100vh - 75px);
 }
-
-.details-wrapper {
-    position  : absolute;
-    top       : 0;
-    left      : 0;
-    width     : 100%;
-    height    : 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.projects {
-    color: rgb(228, 228, 228);
-}
-
 
 div.cards {
     position        : relative;
     display         : inline-block;
-    width           : 180px;
-    height          : 180px;
+    width           : @card-size;
+    height          : @card-size;
     background-color: rgb(245, 245, 245);
     vertical-align  : top;
     margin          : 5px;
     box-shadow      : 3px 3px 5px rgba(0, 0, 0, 0.2);
 
+    .projects {
+        color: rgb(228, 228, 228);
+    }
 
     img {
         width           : 100%;
@@ -93,10 +87,6 @@ div.cards {
     }
 }
 
-.aside {
-    color: black;
-}
-
 
 /*.........scrollbar..........*/
 
@@ -106,7 +96,7 @@ div.cards {
 
 ::-webkit-scrollbar-track {
     border-radius: 10px;
-    border       : 1px solid #CCCCCC;
+    background   : rgb(240, 240, 240);
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,9 +1,6 @@
 
 
 Vue.component('cards', {
-  // The todo-item component now accepts a
-  // "prop", which is like a custom attribute.
-  // This prop is called todo.
   props: ['card'],
   template: `
     <div>
@@ -13,20 +10,14 @@ Vue.component('cards', {
 })
 
 Vue.component('sidebar', {
-  // The todo-item component now accepts a
-  // "prop", which is like a custom attribute.
-  // This prop is called todo.
   props: ['side'],
   template:'<li>{{ side.item }}</li>'
     
 })
 
-Vue.component('category', {
-  // The todo-item component now accepts a
-  // "prop", which is like a custom attribute.
-  // This prop is called todo.
-  props: ['cat'],
-  template:'<div>{{ cat.name }}</div>'
+Vue.component('categories', {
+  props: ['categorie'],
+  template:'<div>{{ categorie.name }}</div>'
     
 })
 
@@ -46,6 +37,13 @@ var app = new Vue({
       { id: 3, title: 'project1' },
       { id: 4, title: 'project2' },
       { id: 5, title: 'project3' }
+    ],
+    categories: [
+      { name: 'Interaction Design' },
+      { name: 'Industrial Design' },
+      { name: 'Computer Graphics' },
+      { name: 'Hobby Projekte' },
+      { name: 'Fotografie' },
     ]
   }
 })

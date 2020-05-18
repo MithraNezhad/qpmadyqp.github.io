@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal website</title>
-    <link rel="stylesheet/less" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet/less" type="text/css"
+        href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet/less" type="text/css" href="./components/reset.css" />
     <link rel="stylesheet/less" type="text/css" href="./components/index.less" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
@@ -23,19 +25,22 @@
         <header>
             <h1>{{sitename}}</h1>
         </header>
-        <section class="side-bar">
+        <aside>
             <ul class="side-bar-items">
                 <sidebar class="aside" v-for="item in sidebar" v-bind:side="item"></sidebar>
             </ul>
-        </section>
-        <div class="content">
-            <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id"></cards>
+        </aside>
+        <section class="main">
+            <categories class="categories" v-for="cats in categories" v-bind:categorie="cats">
 
-            <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id"></cards>
-        </div>
+            </categories>
+            <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id">
+            </cards>
+        </section>
     </div>
 
     <script src="./components/index.js"></script>
 </body>
 
 </html>
+
