@@ -1,4 +1,15 @@
+const notFound = { template: '<p>Page not found</p>' }
+const home = { template: '<p>home page</p>' }
+const about = { template: '<p>about page</p>' }
+const cv = { template: '<p>CV page</p>' }
+const imprint = { template: '<p>imprint page</p>' }
 
+const routes = {
+  '/': home,
+  '/about': about,
+  '/cv': cv,
+  '/imprint': imprint,
+}
 
 Vue.component('cards', {
   props: ['card'],
@@ -25,6 +36,7 @@ Vue.component('categories', {
 var app = new Vue({
   el: '#app',
   data: {
+    currentRoute: window.location.pathname,
     sitename: 'Mehrdad Hozhabri Nezhad',
     sidebar: [
       { item: 'about' },
@@ -45,7 +57,13 @@ var app = new Vue({
       { name: 'Hobby Projekte' },
       { name: 'Fotografie' },
     ]
-  }
+  },
+  // computed: {
+  //   ViewComponent () {
+  //     return routes[this.currentRoute] || NotFound
+  //   }
+  // },
+  // render (h) { return h(this.ViewComponent) }
 })
 
 
