@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal website</title>
-    <link rel="stylesheet/less" type="text/css" href="./components/index.less"/>
+    <link rel="stylesheet/less" type="text/css" href="./components/index.less" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
@@ -15,11 +16,21 @@
 
 
 <body>
-    <cards id="app">
+    <!-- <cards-test id="app">
 
-    </cards>
+    </cards-test> -->
+    <div id="app">
+
+          <cards
+            class="cards"
+            v-for="project in groceryList"
+            v-bind:card="project"
+            v-bind:key="project.id"
+          ></cards>
+      </div>
 
     <script src="./components/index.js"></script>
 </body>
 
 </html>
+
