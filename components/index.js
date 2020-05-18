@@ -1,3 +1,4 @@
+
 Vue.component('project-details', {
     // camelCase in JavaScript
     props: ["model"],
@@ -33,13 +34,13 @@ var app = new Vue({
     },
     mounted: async function () {
         // document ready
-        this.projects = (await axios.get('https://raw.githubusercontent.com/qpmadyqp/qpmadyqp-web/master/src/data.json')).data;
+        this.projectdata = (await axios.get('https://raw.githubusercontent.com/qpmadyqp/qpmadyqp-web/master/src/data.json')).data;
     },
     data: function () {
         return {
             itemDetails: null,
             message: "Hello All",
-            projects: []
+            projectdata: []
         }
 
     }
