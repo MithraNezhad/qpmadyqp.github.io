@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal website</title>
+    <link rel="stylesheet/less" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
     <link rel="stylesheet/less" type="text/css" href="./components/index.less" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
@@ -16,21 +17,25 @@
 
 
 <body>
-    <!-- <cards-test id="app">
 
-    </cards-test> -->
+
     <div id="app">
+        <header>
+            <h1>{{sitename}}</h1>
+        </header>
+        <section class="side-bar">
+            <ul class="side-bar-items">
+                <sidebar class="aside" v-for="item in sidebar" v-bind:side="item"></sidebar>
+            </ul>
+        </section>
+        <div class="content">
+            <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id"></cards>
 
-          <cards
-            class="cards"
-            v-for="project in groceryList"
-            v-bind:card="project"
-            v-bind:key="project.id"
-          ></cards>
-      </div>
+            <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id"></cards>
+        </div>
+    </div>
 
     <script src="./components/index.js"></script>
 </body>
 
 </html>
-
