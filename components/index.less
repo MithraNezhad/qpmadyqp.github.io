@@ -34,6 +34,15 @@ header {
     li {
         display     : inline-block;
         margin-right: 30px;
+
+        .active {
+            border-bottom: 1px solid #333399;
+        }
+    }
+
+    li:hover {
+        cursor: pointer;
+        color : #333399;
     }
 
     h1 {
@@ -79,6 +88,11 @@ app-sidebar {
         height: 25px;
     }
 
+    li:hover {
+        cursor: pointer;
+        color : #333399;
+    }
+
 }
 
 app-content {
@@ -100,6 +114,7 @@ div.cards {
     vertical-align  : top;
     margin          : 5px;
     box-shadow      : 3px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor          : pointer;
 
     .projects {
         color: rgb(228, 228, 228);
