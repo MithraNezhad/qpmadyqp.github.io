@@ -42,12 +42,12 @@ var app = new Vue({
       { item: 'curriculum vitae' },
       { item: 'imprint' }
     ],
-    groceryList: [
-      { id: 0, title: 'Vegetables' },
-      { id: 1, title: 'Cheese' },
+    projectList: [
       { id: 3, title: 'project1' },
       { id: 4, title: 'project2' },
-      { id: 5, title: 'project3' }
+      { id: 5, title: 'project3' },
+      { id: 0, title: 'Vegetables' },
+      { id: 1, title: 'Cheese' }
     ],
     categories: [
       { name: 'Interaction Design' },

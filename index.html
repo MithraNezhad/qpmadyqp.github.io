@@ -21,10 +21,10 @@
 <body>
     <header id="header">
         <h1>{{sitename}}</h1>
-        <ul >
+        <ul>
             <li v-for="value in header">
                 {{ value }}
-              </li>
+            </li>
         </ul>
     </header>
     <div id="app">
@@ -36,9 +36,8 @@
             </app-sidebar>
             <app-content>
                 <categories class="categories" v-for="cats in categories" v-bind:categorie="cats">
-
                 </categories>
-                <cards class="cards" v-for="project in groceryList" v-bind:card="project" v-bind:key="project.id">
+                <cards class="cards" v-for="project in projectList" v-bind:card="project" v-bind:key="project.id">
                 </cards>
             </app-content>
         </app-view>
