@@ -1,28 +1,53 @@
 @main-width: 65%;
 @card-size : 180px;
-@title: 1.2em;
-@subtitle: 1em;
-@content: 0.8em;
+@title     : 1.2em;
+@subtitle  : 1em;
+@content   : 0.8em;
 
 
 body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+ul {
+    margin         : 0;
+    padding        : 0;
+    list-style-type: none;
+}
+
 header {
-    height     : 50px;
-    width      : 100%;
-    position   : relative;
-    margin     : auto;
-    padding-top: 20px;
+    height        : 50px;
+    width         : 100%;
+    position      : relative;
+    margin        : auto;
+    padding-top   : 20px;
+    vertical-align: top;
+
+    ul {
+        display    : inline-block;
+        position   : relative;
+        font-size  : @subtitle;
+        font-weight: 300;
+        margin-left: calc(5vw - 20px);
+    }
+
+    li {
+        display     : inline-block;
+        margin-right: 30px;
+    }
 
     h1 {
+        position       : relative;
+        display        : inline-block;
+        width          : 30%;
         font-size      : @title;
         font-weight    : 300;
         margin         : 0;
         padding        : 0;
         padding-left   : 20px;
         list-style-type: none;
+        width          : 30%;
+        max-width      : 500px;
     }
 }
 
@@ -33,13 +58,13 @@ div#app {
 
 app-sidebar {
 
-    font-size: @subtitle;
+    font-size  : @subtitle;
     font-weight: 300;
     overflow   : hidden;
     position   : relative;
     display    : block;
     float      : left;
-    min-width  : 260px;
+    width      : 30%;
     max-width  : 500px;
     height     : calc(100vh - 75px);
 
@@ -57,11 +82,13 @@ app-sidebar {
 }
 
 app-content {
-    overflow  : hidden;
-    overflow-y: auto;
-    float     : right;
-    width     : @main-width;
-    height    : calc(100vh - 75px);
+    display    : inline-block;
+    position   : relative;
+    overflow   : hidden;
+    overflow-y : auto;
+    width      : @main-width;
+    height     : calc(100vh - 75px);
+    margin-left: 5vw;
 }
 
 div.cards {
@@ -79,8 +106,8 @@ div.cards {
     }
 
     img {
-        width           : 100%;
-        height          : 80%;
+        width : 100%;
+        height: 80%;
     }
 
     p {

@@ -19,14 +19,15 @@
 
 
 <body>
-
-
+    <header id="header">
+        <h1>{{sitename}}</h1>
+        <ul >
+            <li v-for="value in header">
+                {{ value }}
+              </li>
+        </ul>
+    </header>
     <div id="app">
-
-        <header>
-            <h1>{{sitename}}</h1>
-        </header>
-
         <app-view>
             <app-sidebar>
                 <ul class="side-bar-items">
@@ -41,11 +42,7 @@
                 </cards>
             </app-content>
         </app-view>
-        <section class="main">
-
-        </section>
     </div>
-
     <script src="./components/index.js"></script>
 </body>
 

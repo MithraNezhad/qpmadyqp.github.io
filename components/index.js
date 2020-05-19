@@ -22,14 +22,14 @@ Vue.component('cards', {
 
 Vue.component('sidebar', {
   props: ['side'],
-  template:'<li>{{ side.item }}</li>'
-    
+  template: '<li>{{ side.item }}</li>'
+
 })
 
 Vue.component('categories', {
   props: ['categorie'],
-  template:'<div>{{ categorie.name }}</div>'
-    
+  template: '<div>{{ categorie.name }}</div>'
+
 })
 
 
@@ -37,7 +37,6 @@ var app = new Vue({
   el: '#app',
   data: {
     currentRoute: window.location.pathname,
-    sitename: 'Mehrdad Hozhabri Nezhad',
     sidebar: [
       { item: 'about' },
       { item: 'curriculum vitae' },
@@ -66,5 +65,15 @@ var app = new Vue({
   // render (h) { return h(this.ViewComponent) }
 })
 
-
+var header = new Vue({
+  el: '#header',
+  data: {
+    sitename: 'Mehrdad Hozhabri Nezhad',
+    header: {
+      year: 'Year',
+      field: 'Field',
+      category: 'Category'
+    }
+  }
+})
 
