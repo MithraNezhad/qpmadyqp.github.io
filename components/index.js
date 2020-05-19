@@ -54,7 +54,7 @@ var app = new Vue({
       { name: 'Industrial Design' },
       { name: 'Computer Graphics' },
       { name: 'Hobby Projekte' },
-      { name: 'Fotografie' },
+      { name: 'Photography' },
     ]
   },
   // computed: {
