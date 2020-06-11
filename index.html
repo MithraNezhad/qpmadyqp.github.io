@@ -6,43 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mehrdad Hozhabri Nezhad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css"
         href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
-    <link rel="stylesheet/less" type="text/css" href="./components/reset.css" />
-    <link rel="stylesheet/less" type="text/css" href="./components/index.less" />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="components/reset.css" />
+    <link rel="stylesheet/less" type="text/css" href="components/index.less" />
+
 </head>
 
 
 <body>
-    <header id="header">
-        <h1>{{sitename}}</h1>
-        <ul>
-            <li v-for="value in header">
-                {{ value }}
-            </li>
-        </ul>
-    </header>
+   
     <div id="app">
+
+        <header id="header">
+            <h1>{{sitename}}</h1>
+            <ul>
+                <li v-for="filter in header.filters" v-on:click="currentFilter = filter" v-bind:class="{ active: currentFilter == filter }">
+                    {{ filter }}
+                </li>
+            </ul>
+        </header>
+
         <app-view>
             <app-sidebar>
                 <ul class="side-bar-items">
                     <sidebar class="aside" v-for="item in sidebar" v-bind:side="item"></sidebar>
                 </ul>
             </app-sidebar>
+
             <app-content>
-                <categories class="categories" v-for="cats in categories" v-bind:categorie="cats">
-                </categories>
-                <cards class="cards" v-for="project in projectList" v-bind:card="project" v-bind:key="project.id">
-                </cards>
+
+                <div class="filter-show-case" v-for="filter in header.filters">
+
+                    <div v-for="filterType in showcase[filter]" v-if="currentFilter === filter">
+                        <h3>
+                            {{ filterType.name }}
+                        </h3>
+    
+                        <div v-for="project in filterType.items" class="card">
+                            <img v-bind:src="project.projectInfo.thumb" alt="no image">
+                            <p>{{ project.projectInfo.title }}</p>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+ 
+ 
+
+
             </app-content>
         </app-view>
     </div>
-    <script src="./components/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.js"></script>
+
+    <script src="components/index.js"></script>
 </body>
 
 </html>
