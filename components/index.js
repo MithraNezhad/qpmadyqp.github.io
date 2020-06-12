@@ -35,6 +35,7 @@ var app = new Vue({
   mounted: function () {
     axios.get("components/data.json").then((res) => {
       this.data = res.data;
+      console.log(this.data)
     });
   },
   computed: {
