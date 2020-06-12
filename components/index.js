@@ -29,7 +29,7 @@ var app = new Vue({
       { item: "curriculum vitae" },
       { item: "imprint" },
     ],
-    currentFilter: "year",
+    currentFilter: "field",
     data: [],
   },
   mounted: function () {
