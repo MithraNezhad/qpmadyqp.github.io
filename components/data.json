@@ -91,5 +91,50 @@
         "Sketch": false
       }
     }
+  },
+  {
+    "_id": "1",
+    "projectInfo": {
+      "id": 1,
+      "title": "Project C-Design",
+      "subtitle": "Project C-Design",
+      "year": "2004",
+      "month": "01",
+      "category": "University Project",
+      "field": "Industrial Design",
+      "description": "description",
+      "colorTag": "4cc3e1",
+      "thumb": "assets/altimg.svg",
+      "conceptRate": 10
+    },
+    "projectImages": {
+      "img001": "URL",
+      "img002": "URL"
+    },
+    "tech": {
+      "CAD-Software": {
+        "3D-Studio MAX": false,
+        "Autodesk AutoCAD": false
+      },
+      "Graphic-Softwares": {
+        "Adobe Photoshop": false,
+        "Adobe Illustrator": false,
+        "Adobe InDesign": false,
+        "Adobe After Effects": false,
+        "Adobe Premier": false
+      },
+      "Programming Technologies": {
+        "HTML, CSS, JavaScript": false,
+        "AngularJs": false,
+        "C++": false,
+        "C#": false
+      },
+      "Prototyping Tools": {
+        "Axure RP": false,
+        "Invention": false,
+        "Flinto": false,
+        "Sketch": false
+      }
+    }
   }
 ]
