@@ -40,13 +40,14 @@ var app = new Vue({
   computed: {
     showcase: function () {
       const aggregate = (key) => {
+        
         const groups = _.groupBy(this.data, (p) => p.projectInfo[key]);
         const keys = Object.keys(groups);
+        keys.sort( (a , b) => parseInt(b) - parseInt(a) );
         return keys.map((p) => {
           return { name: p, items: groups[p] };
         });
       };
-
       const aggregated = {};
 
       this.header.filters.forEach(
