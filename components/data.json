@@ -4,22 +4,20 @@
     "uniqId": "95e47363-da30-49bd-bc1f-560a0bd2f323",
     "projectInfo": {
       "id": 1,
-      "title": "Conscious Nutrition",
-      "subtitle": "Workshop for schoolchildren in 5th to 6th grade",
+      "title": "Bewusste Ernährung",
+      "subtitle": "Workshop für Schuler von 5. bis 6. Klasse",
       "year": "2020",
       "month": "02",
-      "organization": "University for Design Schwäbisch Gmünd",
-      "category": "University Project",
-      "field": "Interaction Design",
+      "organization": "HfG Schwäbisch Gmünd",
+      "category": "Universitätsprojekt",
+      "field": "Interaktionsgestaltung",
       "module": "Bachelor Thesis",
       "description": "description",
       "partners": "Ekatherina Buryak",
       "colorTag": "4cc3e1",
       "thumb": "assets/altimg.svg",
-      "conceptRate": 10
-    },
-    "projectImages": {
-      "img001": "assets/001-conscious-nutrition.png"
+      "projectImages": "assets/001-95e47363-da30-49bd-bc1f-560a0bd2f323.png",
+      "conceptRate": 8
     },
     "tech": {
       "CAD-Softwares": {
@@ -27,11 +25,57 @@
         "Autodesk AutoCAD": false
       },
       "Graphic-Softwares": {
-        "Adobe Photoshop": false,
-        "Adobe Illustrator": false,
-        "Adobe InDesign": false,
-        "Adobe After Effects": false,
-        "Adobe Premier": false
+        "Adobe Photoshop": true,
+        "Adobe Illustrator": true,
+        "Adobe InDesign": true,
+        "Adobe After Effects": true,
+        "Adobe Premier": true
+      },
+      "Frameworks": {
+        "HTML, CSS, JavaScript": false,
+        "AngularJs": false,
+        "C++": false,
+        "C#": false
+      },
+      "Prototyping Tools": {
+        "Axure RP": true,
+        "Invention": false,
+        "Flinto": false,
+        "Sketch": true,
+        "Unity": false
+      }
+    }
+  },{
+    "_id": "1",
+    "uniqId": "8a2b2c83-3d39-4fb8-9235-c2585944edc3",
+    "projectInfo": {
+      "id": 2,
+      "title": "User Observation",
+      "subtitle": "Interview Analysing Tools",
+      "year": "2019",
+      "month": "06",
+      "organization": "HfG Schwäbisch Gmünd",
+      "category": "Universitätsprojekt",
+      "field": "Interaktionsgestaltung",
+      "module": "Gestaltungsschwerpunkte",
+      "description": "description",
+      "partners": "Ekatherina Buryak",
+      "colorTag": "8802ff",
+      "thumb": "assets/altimg.svg",
+      "projectImages": "assets/001-8a2b2c83-3d39-4fb8-9235-c2585944edc3.png",
+      "conceptRate": 10
+    },
+    "tech": {
+      "CAD-Softwares": {
+        "3D-Studio MAX": false,
+        "Autodesk AutoCAD": false
+      },
+      "Graphic-Softwares": {
+        "Adobe Photoshop": true,
+        "Adobe Illustrator": true,
+        "Adobe InDesign": true,
+        "Adobe After Effects": true,
+        "Adobe Premier": true
       },
       "Frameworks": {
         "HTML, CSS, JavaScript": false,
@@ -47,80 +91,170 @@
         "Unity": false
       }
     }
+  },{
+    "_id": "2",
+    "uniqId": "63f7f4ca-9f33-431a-9659-9a1fc0cd5ad3",
+    "projectInfo": {
+      "id": 3,
+      "title": "Industrie 4.0",
+      "subtitle": "Industrie 4.0 im Rahmen der Hochschule",
+      "year": "2018",
+      "month": "06",
+      "organization": "HfG Schwäbisch Gmünd",
+      "category": "Universitätsprojekt",
+      "field": "Interaktionsgestaltung",
+      "module": "Application Design II",
+      "description": "description",
+      "partners": "Ekatherina Buryak",
+      "colorTag": "8802ff",
+      "thumb": "assets/altimg.svg",
+      "projectImages": "assets/001-63f7f4ca-9f33-431a-9659-9a1fc0cd5ad3.png",
+      "conceptRate": 9
+    },
+    "tech": {
+      "CAD-Softwares": {
+        "3D-Studio MAX": false,
+        "Autodesk AutoCAD": false
+      },
+      "Graphic-Softwares": {
+        "Adobe Photoshop": true,
+        "Adobe Illustrator": true,
+        "Adobe InDesign": true,
+        "Adobe After Effects": true,
+        "Adobe Premier": true
+      },
+      "Frameworks": {
+        "HTML, CSS, JavaScript": true,
+        "AngularJs": false,
+        "C++": false,
+        "C#": false
+      },
+      "Prototyping Tools": {
+        "Axure RP": false,
+        "Invention": false,
+        "Flinto": true,
+        "Sketch": true,
+        "Unity": false
+      }
+    }
+  },{
+    "_id": "3",
+    "uniqId": "e78c8112-7e60-483d-8899-841fca09bda5",
+    "projectInfo": {
+      "id": 4,
+      "title": "Interaktionspattern",
+      "subtitle": "Die optimierte Befehle für Zeichenapplikationen in VR",
+      "year": "2018",
+      "month": "06",
+      "organization": "HfG Schwäbisch Gmünd",
+      "category": "Universitätsprojekt",
+      "field": "Interaktionsgestaltung",
+      "module": "Invention Design II",
+      "description": "description",
+      "partners": "Ekatherina Buryak",
+      "colorTag": "8802ff",
+      "thumb": "assets/altimg.svg",
+      "projectImages": "assets/001-63f7f4ca-9f33-431a-9659-9a1fc0cd5ad3.png",
+      "conceptRate": 9
+    },
+    "tech": {
+      "CAD-Softwares": {
+        "3D-Studio MAX": false,
+        "Autodesk AutoCAD": false
+      },
+      "Graphic-Softwares": {
+        "Adobe Photoshop": true,
+        "Adobe Illustrator": true,
+        "Adobe InDesign": true,
+        "Adobe After Effects": true,
+        "Adobe Premier": true
+      },
+      "Frameworks": {
+        "HTML, CSS, JavaScript": true,
+        "AngularJs": false,
+        "C++": false,
+        "C#": false
+      },
+      "Prototyping Tools": {
+        "Axure RP": false,
+        "Invention": false,
+        "Flinto": true,
+        "Sketch": true,
+        "Unity": false
+      }
+    }
+  },{
+    "_id": "4",
+    "uniqId": "e00fead8-86c3-4673-805e-6c6c66768b19",
+    "projectInfo": {
+      "id": 5,
+      "title": "Telefonie",
+      "subtitle": "Kommunikation mittels Elektrizität",
+      "year": "2017",
+      "month": "06",
+      "organization": "HfG Schwäbisch Gmünd",
+      "category": "Universitätsprojekt",
+      "field": "Interaktionsgestaltung",
+      "module": "Interaktive Kommunikationssysteme",
+      "description": "description",
+      "partners": "Sina Schulz",
+      "colorTag": "143b52",
+      "thumb": "assets/altimg.svg",
+      "projectImages": "assets/001-e00fead8-86c3-4673-805e-6c6c66768b19.png",
+      "conceptRate": 9
+    },
+    "tech": {
+      "CAD-Softwares": {
+        "3D-Studio MAX": false,
+        "Autodesk AutoCAD": false
+      },
+      "Graphic-Softwares": {
+        "Adobe Photoshop": true,
+        "Adobe Illustrator": true,
+        "Adobe InDesign": true,
+        "Adobe After Effects": true,
+        "Adobe Premier": true
+      },
+      "Frameworks": {
+        "HTML, CSS, JavaScript": true,
+        "AngularJs": false,
+        "C++": false,
+        "C#": false
+      },
+      "Prototyping Tools": {
+        "Axure RP": false,
+        "Invention": false,
+        "Flinto": true,
+        "Sketch": true,
+        "Unity": false
+      }
+    }
   },
   {
-    "_id": "1",
+    "_id": "111",
     "uniqId": "d1ee8ff1-a963-4df7-a11a-80931dd8bae0",
     "projectInfo": {
-      "id": 1,
+      "id": 112,
       "title": "Project C-Design",
       "subtitle": "Project C-Design",
       "year": "2004",
       "month": "01",
-      "category": "University Project",
+      "category": "Universitätsprojekt",
       "field": "Industrial Design",
       "description": "description",
       "colorTag": "4cc3e1",
       "thumb": "assets/altimg.svg",
-      "conceptRate": 10
-    },
-    "projectImages": {
-      "img001": "assets/001-d1ee8ff1-a963-4df7-a11a-80931dd8bae0.png"
+      "projectImages": "assets/001-d1ee8ff1-a963-4df7-a11a-80931dd8bae0.png",
+      "conceptRate": 8
     },
     "tech": {
       "CAD-Softwares": {
-        "3D-Studio MAX": false,
-        "Autodesk AutoCAD": false
+        "3D-Studio MAX": true,
+        "Autodesk AutoCAD": true
       },
       "Graphic-Softwares": {
-        "Adobe Photoshop": false,
-        "Adobe Illustrator": false,
-        "Adobe InDesign": false,
-        "Adobe After Effects": false,
-        "Adobe Premier": false
-      },
-      "Frameworks": {
-        "HTML, CSS, JavaScript": false,
-        "AngularJs": false,
-        "C++": false,
-        "C#": false
-      },
-      "Prototyping Tools": {
-        "Axure RP": false,
-        "Invention": false,
-        "Flinto": false,
-        "Sketch": false,
-        "Unity": false
-      }
-    }
-  },
-  {
-    "_id": "1",
-    "projectInfo": {
-      "id": 1,
-      "title": "Project C-Design",
-      "subtitle": "Project C-Design",
-      "year": "2004",
-      "month": "01",
-      "category": "University Project",
-      "field": "Industrial Design",
-      "description": "description",
-      "colorTag": "4cc3e1",
-      "thumb": "assets/altimg.svg",
-      "conceptRate": 10
-    },
-    "projectImages": {
-      "img001": "URL",
-      "img002": "URL"
-    },
-    "tech": {
-      "CAD-Softwares": {
-        "3D-Studio MAX": false,
-        "Autodesk AutoCAD": false
-      },
-      "Graphic-Softwares": {
-        "Adobe Photoshop": false,
-        "Adobe Illustrator": false,
+        "Adobe Photoshop": true,
+        "Adobe Illustrator": true,
         "Adobe InDesign": false,
         "Adobe After Effects": false,
         "Adobe Premier": false
