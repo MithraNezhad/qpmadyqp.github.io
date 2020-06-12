@@ -1,6 +1,7 @@
 [
   {
     "_id": "0",
+    "uniqId": "95e47363-da30-49bd-bc1f-560a0bd2f323",
     "projectInfo": {
       "id": 1,
       "title": "Conscious Nutrition",
@@ -49,6 +50,7 @@
   },
   {
     "_id": "1",
+    "uniqId": "d1ee8ff1-a963-4df7-a11a-80931dd8bae0",
     "projectInfo": {
       "id": 1,
       "title": "Project C-Design",
@@ -63,8 +65,7 @@
       "conceptRate": 10
     },
     "projectImages": {
-      "img001": "URL",
-      "img002": "URL"
+      "img001": "assets/001-d1ee8ff1-a963-4df7-a11a-80931dd8bae0.png"
     },
     "tech": {
       "CAD-Softwares": {
