@@ -11,8 +11,8 @@
       "category": "University Project",
       "field": "Interaction Design",
       "module": "Bachelor Thesis",
-      "description": "description",
-      "partners": "",
+      "description": "assets/description-Conscious nutrition",
+      "partners": "Ekatherina Buryak",
       "colorTag": "4cc3e1",
       "thumb": "assets/altimg.svg",
       "conceptRate": 10
@@ -22,7 +22,7 @@
       "img002": "URL"
     },
     "tech": {
-      "CAD-Software": {
+      "CAD-Softwares": {
         "3D-Studio MAX": false,
         "Autodesk AutoCAD": false
       },
@@ -33,7 +33,7 @@
         "Adobe After Effects": false,
         "Adobe Premier": false
       },
-      "Programming Technologies": {
+      "Frameworks": {
         "HTML, CSS, JavaScript": false,
         "AngularJs": false,
         "C++": false,
@@ -43,7 +43,8 @@
         "Axure RP": false,
         "Invention": false,
         "Flinto": false,
-        "Sketch": false
+        "Sketch": false,
+        "Unity": false
       }
     }
   },
@@ -67,7 +68,7 @@
       "img002": "URL"
     },
     "tech": {
-      "CAD-Software": {
+      "CAD-Softwares": {
         "3D-Studio MAX": false,
         "Autodesk AutoCAD": false
       },
@@ -78,7 +79,7 @@
         "Adobe After Effects": false,
         "Adobe Premier": false
       },
-      "Programming Technologies": {
+      "Frameworks": {
         "HTML, CSS, JavaScript": false,
         "AngularJs": false,
         "C++": false,
@@ -88,7 +89,8 @@
         "Axure RP": false,
         "Invention": false,
         "Flinto": false,
-        "Sketch": false
+        "Sketch": false,
+        "Unity": false
       }
     }
   },
@@ -112,7 +114,7 @@
       "img002": "URL"
     },
     "tech": {
-      "CAD-Software": {
+      "CAD-Softwares": {
         "3D-Studio MAX": false,
         "Autodesk AutoCAD": false
       },
@@ -123,7 +125,7 @@
         "Adobe After Effects": false,
         "Adobe Premier": false
       },
-      "Programming Technologies": {
+      "Frameworks": {
         "HTML, CSS, JavaScript": false,
         "AngularJs": false,
         "C++": false,
@@ -133,7 +135,8 @@
         "Axure RP": false,
         "Invention": false,
         "Flinto": false,
-        "Sketch": false
+        "Sketch": false,
+        "Unity": false
       }
     }
   }
