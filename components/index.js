@@ -49,11 +49,9 @@ var app = new Vue({
         });
       };
       const aggregated = {};
-
       this.header.filters.forEach(
         (p) => (aggregated[p] = aggregate(p))
       );
-
       return aggregated;
     },
   },
