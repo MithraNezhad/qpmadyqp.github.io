@@ -3,7 +3,7 @@
     "_id": "0",
     "projectInfo": {
       "id": 1,
-      "title": "Conscious nutrition",
+      "title": "Conscious Nutrition",
       "subtitle": "Workshop for schoolchildren in 5th to 6th grade",
       "year": "2020",
       "month": "02",
@@ -18,8 +18,7 @@
       "conceptRate": 10
     },
     "projectImages": {
-      "img001": "URL",
-      "img002": "URL"
+      "img001": "assets/001-conscious-nutrition.png"
     },
     "tech": {
       "CAD-Softwares": {
