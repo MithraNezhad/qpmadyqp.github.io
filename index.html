@@ -17,13 +17,14 @@
 
 
 <body>
-   
+
     <div id="app">
 
         <header id="header">
             <h1>{{sitename}}</h1>
             <ul>
-                <li v-for="filter in header.filters" v-on:click="currentFilter = filter" v-bind:class="{ active: currentFilter == filter }">
+                <li v-for="filter in header.filters" v-on:click="currentFilter = filter"
+                    v-bind:class="{ active: currentFilter == filter }">
                     {{ filter }}
                 </li>
             </ul>
@@ -40,20 +41,23 @@
 
                 <div class="filter-show-case" v-for="filter in header.filters">
 
-                    <div v-for="filterType in showcase[filter]" v-if="currentFilter === filter">
+                    <div class="cat-parent" v-for="filterType in showcase[filter]" v-if="currentFilter === filter">
                         <h3>
                             {{ filterType.name }}
                         </h3>
-    
+
                         <div v-for="project in filterType.items" class="card">
                             <img v-bind:src="project.projectInfo.thumb" alt="no image">
                             <p>{{ project.projectInfo.title }}</p>
                         </div>
-    
+
+                        <div v-for="project in filterType.items">
+                        </div>
+
                     </div>
 
                 </div>
-                
+
             </app-content>
         </app-view>
     </div>
