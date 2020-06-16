@@ -16,6 +16,7 @@ Vue.component("sidebar", {
   template: "<li>{{ side.item }}</li>",
 });
 
+
 var app = new Vue({
   el: "#app",
   data: {
@@ -31,6 +32,7 @@ var app = new Vue({
     ],
     currentFilter: "field",
     data: [],
+    isHidden: true,
   },
   mounted: function () {
     axios.get("components/data.json").then((res) => {
@@ -56,6 +58,13 @@ var app = new Vue({
       return aggregated;
     },
   },
+  methods: {
+    overlay: function (event) {
+      const projectId = event.target.id;
+      this.isHidden = false;
+      alert('Hello ' + this.data[0].projectInfo.category + '!' + projectId)
+    }
+  }
   // computed: {
   //   ViewComponent () {
   //     return routes[this.currentRoute] || NotFound

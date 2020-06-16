@@ -46,12 +46,9 @@
                             {{ filterType.name }}
                         </h3>
 
-                        <div v-for="project in filterType.items" class="card">
+                        <div v-on:click="overlay" v-for="project in filterType.items" v-bind:id="project._id" :key="project._id" class="card">
                             <img v-bind:src="project.projectInfo.thumb" alt="no image">
                             <p>{{ project.projectInfo.title }}</p>
-                        </div>
-
-                        <div v-for="project in filterType.items">
                         </div>
 
                     </div>
@@ -59,7 +56,20 @@
                 </div>
 
             </app-content>
+
+            <div id="more-detail" v-for="projects in data" v-if="!isHidden">
+                <button class="close" v-on:click="isHidden = true">x</button>
+                <div>
+                    <h1>{{ projects.projectInfo.title }}</h1>
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+
         </app-view>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
