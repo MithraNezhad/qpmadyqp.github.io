@@ -42,9 +42,9 @@
                 <div class="filter-show-case" v-for="filter in header.filters">
 
                     <div class="cat-parent" v-for="filterType in showcase[filter]" v-if="currentFilter === filter">
-                        <h3>
+                        <h1>
                             {{ filterType.name }}
-                        </h3>
+                        </h1>
 
                         <div v-on:click="overlay" v-for="project in filterType.items" v-bind:id="project._id" :key="project._id" class="card">
                             <img v-bind:src="project.projectInfo.thumb" alt="no image">
@@ -59,13 +59,20 @@
 
             <div id="more-detail" v-for="projects in data" v-if="!isHidden">
                 <button class="close" v-on:click="isHidden = true">x</button>
-                <div>
+                <div id="first-column">
                     <h1>{{ projects.projectInfo.title }}</h1>
-                    <h3></h3>
-                    <p></p>
+                    <h2>{{ projects.projectInfo.subtitle }}</h2>
+                    <h3>{{ projects.projectInfo.year }}</h3>
+                    <h3>{{ projects.projectInfo.category }}</h3>
+                    <h3>{{ projects.projectInfo.field }}</h3>
                 </div>
-                <div></div>
-                <div></div>
+                <div id="secound-column">
+                    <h3>Projektbeschreibung</h3>
+                    <p>{{ projects.projectInfo.description }}</p>
+                </div>
+                <div id="third-column">
+                    <img :src="projects.projectInfo.projectImages" alt="">
+                </div>
             </div>
 
         </app-view>
