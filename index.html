@@ -60,19 +60,19 @@
 
             <div id="more-detail" v-for="projects in data" v-if="!isHidden">
                 <button class="close" v-on:click="isHidden = true">x</button>
-                <div id="first-column">
+                <div class="first-column">
                     <h1>{{ projects.projectInfo.title }}</h1>
                     <h2>{{ projects.projectInfo.subtitle }}</h2>
                     <h3>{{ projects.projectInfo.year }}</h3>
                     <h3>{{ projects.projectInfo.category }}</h3>
                     <h3>{{ projects.projectInfo.field }}</h3>
                 </div>
-                <div id="secound-column">
+                <div class="secound-column">
                     <h3>Projektbeschreibung</h3>
                     <zero-md css-urls='["components/md.css"]' :src="projects.projectInfo.description">
                     </zero-md>
                 </div>
-                <div id="third-column">
+                <div class="third-column">
                     <img :src="projects.projectInfo.projectImages" alt="">
                 </div>
             </div>
