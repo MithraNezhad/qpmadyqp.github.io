@@ -20,9 +20,12 @@ ul {
 h1 {
     font-size: @title;
 }
-h2 {
+
+h2,
+h3 {
     font-size: @subtitle;
 }
+
 p {
     font-size: @content;
 }
@@ -175,45 +178,55 @@ div.card {
 /*.........scrollbar..........*/
 
 div#more-detail {
-    position  : absolute;
-    left      : 0;
-    top       : 0;
-    width     : 100%;
-    height    : 100%;
+    position      : absolute;
+    left          : 0;
+    top           : 0;
+    width         : 100%;
+    height        : 100%;
     // border    : 1px solid red;
-    background: white;
+    background    : white;
+    vertical-align: top;
+
     #first-column {
-        position: relative;
-        display: inline-block;
-        height: 100%;
-        width: 15%;
+        position      : relative;
+        display       : inline-block;
+        height        : 100%;
+        width         : 20vw;
+        vertical-align: top;
+
         h1 {
             padding: 20px 20px 0 20px;
         }
+
         h2 {
             padding: 0 20px 10px 20px;
         }
+
         h3 {
             padding: 0 20px;
         }
     }
+
     #secound-column {
-        position: relative;
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-
+        position      : relative;
+        display       : inline-block;
+        width         : 35vw;
+        vertical-align: top;
+        padding       : 75px 20px 0 20px;
     }
-    #third-column {
-        position: relative;
-        display: inline-block;
-        height: 100%;
-        img{
 
+    #third-column {
+        position      : relative;
+        display       : inline-block;
+        height        : 100%;
+        vertical-align: top;
+        padding-top   : 75px;
+
+        img {
+            width: 40vw;
         }
     }
 }
-
 
 
 button.close {
@@ -223,4 +236,5 @@ button.close {
     background: none;
     border    : none;
     padding   : 10px;
+    z-index   : 10000;
 }
