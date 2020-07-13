@@ -62,7 +62,7 @@ var app = new Vue({
     overlay: function (event) {
       const projectId = event.target.id;
       this.isHidden = false;
-      alert('Hello ' + this.data.projectInfo.title + '!' + projectId)
+      console.log('Hello ' + this.data.projectInfo.title + '!' + projectId)
     }
   }
   // computed: {
